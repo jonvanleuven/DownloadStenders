@@ -90,7 +90,7 @@ namespace DownloadStenders
 	
         private static void Log(string m)
         {
-            Console.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss,ffff} {m}");
+            Console.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss,fff} {m}");
         }
     }
 }
