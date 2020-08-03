@@ -21,12 +21,18 @@ namespace DownloadStenders
                 Console.WriteLine(args.Usage);
                 return;
             }
-            Check();
             if( args.Poll ) 
             {
-                Log($"Check again at '{DateTime.Now.AddHours(1)}'");
-                Thread.Sleep(TimeSpan.FromHours(1));
-                Check();	
+                while (true)
+                {
+                    Check();	
+                    Log($"Will check again at '{DateTime.Now.AddHours(1):dd-MM-yyyy HH:mm}'");
+                    Thread.Sleep(TimeSpan.FromHours(1));
+                }
+            }
+            else
+            {
+                Check();
             }
         }
 

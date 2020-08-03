@@ -16,10 +16,10 @@ namespace DownloadStenders
         public bool All { get; set; }
         public bool DisplayUsage { get; set; }
         public string Usage => @"Usage:
-	DownloadStenders.exe <output-folder> [-poll] [-all]
+DownloadStenders.exe <output-folder> [-poll] [-all]
 
-	output-folder   folder to write mp3's to (mandatory)
-	-poll           check for new mp3's every hour (optional)
-	-all            download all mp3's (optional)";
+  output-folder   folder to write mp3's to (mandatory)
+  -poll           check for new mp3's every hour (optional)
+  -all            download all mp3's (optional)";
     }
 }
